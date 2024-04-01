@@ -45,7 +45,7 @@ io.on("connection", (socket) => {
             username,
             message,
         });
-        socket.broadcast.to(currentRoomId).emit("receive-message", username, message);
+        socket.broadcast.to(currentRoomId).emit("recieve-message", username, message);
         console.log("Socket IDs in room :", Array.from(io.sockets.adapter.rooms.get(currentRoomId) || []));
     });
 
