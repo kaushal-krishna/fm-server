@@ -4,6 +4,10 @@
   "description": "The Flexomate Server",
   "main": "index.js",
   "scripts": {
+    "format": "npx prettier . --write",
+    "push": "git add . && git commit -m date && git push origin master",
+    "force-push": "git add . && git commit -m date && git push --force origin master",
+    "pull": "git pull origin master",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
