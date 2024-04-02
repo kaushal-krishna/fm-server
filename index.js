@@ -8,7 +8,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost","http://localhost:3000", "https://flexomate.web.app"],,
+        origin: ["http://localhost","http://localhost:3000", "https://flexomate.web.app"],
         methods: ["GET", "POST"],
         credentials: true,
     },
@@ -16,7 +16,7 @@ const io = new Server(server, {
 
 app.use(
     cors({
-        origin: ["http://localhost","http://localhost:3000", "https://flexomate.web.app"],,
+        origin: ["http://localhost","http://localhost:3000", "https://flexomate.web.app"],
         methods: ["GET", "POST"],
         credentials: true,
     })
