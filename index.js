@@ -16,7 +16,7 @@ const io = new Server(server, {
 
 app.use(
     cors({
-        origin: ["http://localhost","http://localhost:3000", "https://flexomate.web.app"],
+        origin: ["http://localhost","http://localhost:3000", "https://flexiyo.web.app"],
         methods: ["GET", "POST"],
         credentials: true,
     })
